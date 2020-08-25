@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-color: #E2E3E4;
+  background-color: #EBEBEC;
 }
 
 header, main, footer {
@@ -11,7 +11,6 @@ header, main, footer {
 }
 
 a {
-  font-weight: 900;
   color:#58595B;
   text-decoration: none;
 }
@@ -72,12 +71,42 @@ header h3, footer {
   font-weight: 200;
 }
 
-p, ol, ul {
+p, ol, ul, form label {
   color:#58595B;
   font-size: 15px;
-  font-weight:100;
   line-height: 150%; 
 }
+
+/* Navigation */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #58595B;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #CCC;
+}
+
+
+
 /* Wrapper & Background Styles */
 
 
@@ -112,6 +141,42 @@ main {
   margin: auto;
   margin-bottom: 50px;
 }
+
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border-color:#CCC;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  background-color: #f7f7f7;
+  border-width: 1px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+/* Map Design */
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 
 /* Footer Style */
 
@@ -165,4 +230,19 @@ footer {
     width: 300px;
     text-align: center;
     margin: auto 0 auto 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-sm {
+    text-align: left;
+    width:50px;
+    height:50px;
+    padding-left: 10px;
+
+  }
+  
 }
