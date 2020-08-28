@@ -142,6 +142,13 @@ main {
   margin-bottom: 50px;
 }
 
+/* Portfolio Style */
+.portfolio {
+  text-align: center;
+  list-style-type:none;
+  padding:0;
+}
+
 /* Contact Form Design */
 
 form {
@@ -175,6 +182,15 @@ form textarea {
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+  width: 100%;
+  height: 500;
+  border: none;
+  overflow: block;
+  margin: 0;  width: 100%;
+  height: 500px;
+  border: none;
+  overflow: block;
+  margin: 0;
 }
 
 
